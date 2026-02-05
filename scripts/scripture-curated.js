@@ -343,20 +343,20 @@ class ScriptureCurated {
     let application = '';
     
     if (verse.theology?.includes('trust')) {
-      application = 'Trust God in this situation, even when you cannot see the outcome.';
+      application = "Trust God in this situation, even when you cannot see the outcome.";
     } else if (verse.theology?.includes('hope')) {
-      application = 'Set your hope on God's promises, not on circumstances.';
+      application = "Set your hope on God's promises, not on circumstances.";
     } else if (verse.theology?.includes('peace')) {
-      application = 'Receive God's peace, which transcends understanding.';
+      application = "Receive God's peace, which transcends understanding.";
     } else if (verse.theology?.includes('love')) {
-      application = 'Show love to others as God has loved you.';
+      application = "Show love to others as God has loved you.";
     } else {
       application = 'Apply this truth to your life through prayer and obedience.';
     }
     
     // Adjust for event severity
     if (event.severity === 'high') {
-      application += ' In acute suffering, focus on God's presence rather than explanations.';
+      application += " In acute suffering, focus on God's presence rather than explanations.";
     }
     
     return application;
